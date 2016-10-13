@@ -20,3 +20,7 @@
 
 
 ### Project Ideas
+
+This application will make the user play a game beer while at the same time the user will be winning rewards towards having free drinks. Each beer will have ranking points based international standars
+
+### More coming Soon.... :beer:
