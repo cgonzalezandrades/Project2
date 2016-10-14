@@ -2,11 +2,11 @@
 
 ### Group Members and Skills
 1. Patrick Galloway
-*    **Project manager** and **Back End developer**	
-2. Carlos Gonzalez
-*    **Back end Developer**
-3. Lea Steele
-*    **Back end Developer**
+***Project manager** and **Back End developer**	
+2. Lea Steele
+***Back end Developer**
+3. Carlos Gonzalez
+***Back end Developer**
 
 
 ### Data Sets:
