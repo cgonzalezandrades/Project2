@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
+    "moment": "^2.15.1",
     "sequelize": "^3.24.3"
   },
   "devDependencies": {}
