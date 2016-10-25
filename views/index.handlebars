@@ -14,36 +14,54 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
+                    <li class = "navLi">
                         <a href="index.html">Home</a>
                     </li>
-                    <li>
+                    <li class = "navLi">
                         <a href="about.html">About</a>
                     </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
+                    <li class = "navLi">
+                        <a href="signup.html">Sign up</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li class = "navLi">
+                        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+            <ul id="login-dp" class="dropdown-menu">
+                <li>
+                     <div class="row">
+                            <div class="col-md-12">
+                                Login via
+                                <div class="social-buttons">
+                                    <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                </div>
+                                <br>
+                                or
+                                <br>
+                                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                        <div class="form-group">
+                                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                             <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                        </div>
+                                        <div class="form-group">
+                                             <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                             <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                        </div>
+                                        <div class="form-group">
+                                             <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                        </div>
+                                 </form>
+                            </div>
+                     </div>
+                </li>
+            </ul>
+        </li>
                     </li>
                 </ul>
-            </div>
-            <form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputPassword3">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Sign in</button>
-</form>
+                          <form class="form-inline">
+ 
+
+ 
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
