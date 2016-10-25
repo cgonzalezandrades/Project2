@@ -7,7 +7,7 @@
 
     <!-- Sign-Up Panel-->
     <div class="col-lg-12">
-      <div class="panel panel-default">
+      <div class="panel panel-default signUpBox">
         <div class="panel-heading">
           <h3 class="panel-title">New Member Sign-Up</h3>
         </div>
@@ -42,23 +42,9 @@
   <script src="https://code.jquery.com/jquery.js"></script>
 
   <script>
-
-// Capture Button Click
-$("#addUser").on("click", function() {
-
-  // Capture User Inputs and store into variables
-  var name = $('#nameInput').val().trim(); 
-  var email = $('#emailInput').val().trim(); 
-  var age = $('#pwInput').val().trim(); 
-  var comment = $('#commentInput').val().trim(); 
-
-  // Console log each of the user inputs to confirm you are receiving them
-  console.log(name);
-  console.log(email);
-  console.log(age);
-  console.log(comment);
-
-  // Replaces the content in the "recentMember" div
-  $("#recentMember").empty();
-
+    // Capture Button Click
+    $("#addUser").on("click", function() {
+    // Replaces the content in the "recentMember" div
+      $("#recentMember").empty();
+    });
   </script>

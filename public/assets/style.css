@@ -5,14 +5,22 @@ html {
 .brand {
 	background-color: transparent !important; 
 	color: white;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
 	letter-spacing: 2px;
 	text-align: center;
-	font-size: 65px;
+	font-size: 100px;
 	padding-top: 15px;
 
 }
 
+.slogan {
+	background-color: transparent !important; 
+	color: white;
+	text-align: center;
+	font-size: 45px;
+	font-family: 'Pacifico', cursive;
+}
 .navbar {
 	text-align: center;
 	text-transform: uppercase;
@@ -31,7 +39,7 @@ body {
 ul.nav.navbar-nav {
 	display: inline-block;
 	padding-top: 25px;
-	padding-left: 245px;
+	padding-left: 325px;
 	
 }
 
@@ -85,6 +93,10 @@ ul.nav.navbar-nav {
 	padding-left: 20px;
 }
 
+li.dropdown {
+	padding-left: 40px;
+}
+
 @media(max-width:768px){
     #login-dp{
         background-color: inherit;
@@ -123,16 +135,33 @@ footer {
 	text-align: center;
 	bottom: 0;
 	height: 70px;
-	font-size: 15px;
-	font-family: 'Berkshire Swash', cursive;
-	margin-top: 20px;
+	font-size: 35px;
+	font-family: 'Amatic SC', cursive;
+	margin-top: 35px;
 }
 
 p.footerText {
-	padding-top: 25px;
+	padding-top: 13px;
 }
 
+.jumbotron {
+	margin-top: 50px;
+}
 
+h1.text-center {
+	font-family: 'Amatic SC', cursive;
+	font-size: 100px !important;
+	font-weight: bold;
+}
+
+.signUpBox {
+	background-color: white;
+	width: 1150px;
+	height: 500px;
+	margin-left: 65px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
 
 
 

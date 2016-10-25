@@ -4,6 +4,7 @@ var express = require('express');
 var hB = require('express-handlebars');
 var path = require('path');
 var models = require('./models');
+var user = require('./controllers/user_controller');
 
 var app = express();
 
@@ -41,6 +42,7 @@ models.login.sync({force:true});
 models.rankings.sync({force:true});
 
 app.use('/',home_controller);
+app.use('/users', user);
 
 
 app.listen(3000, function (){
