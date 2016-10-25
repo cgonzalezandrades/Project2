@@ -81,8 +81,8 @@ ul.nav.navbar-nav {
     background-color:#59b5fa;
 }
 
-a.dropdown-toggle {
-	padding-left: 10px;
+.dropdown {
+	padding-left: 20px;
 }
 
 @media(max-width:768px){
