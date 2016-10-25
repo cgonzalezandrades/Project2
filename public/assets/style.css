@@ -163,5 +163,51 @@ h1.text-center {
 	margin-bottom: 50px;
 }
 
+.head {
+	width: 100%;
+	text-align: center;
+	background-color: transparent !important; 
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 100px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+.rank {
+	width: 15%;
+	height: 400px;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-color: white;
+	margin-left: 43px;
+	margin-bottom: 70px;
+}
+
+.userInfo {
+	width: 60%;
+	height: 400px;
+	text-align: center;
+	float: left;
+	margin: 10px;
+	background-color: white;
+	margin-bottom: 70px;
+	
+	
+}
+
+.groups {
+	width: 15%;
+	height: 400px;
+	text-align: center;
+	float: left;
+	margin: 10px;
+	background-color: white;
+	margin-bottom: 70px;
+}
 
 
