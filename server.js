@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 var api_controller = require('./controllers/api_controller');
 var home_controller = require('./controllers/home_controller');
 
-models.beer.sync({force:true});
+models.beer.sync();
 models.groups.sync({force:true});
 models.user.sync({force:true});
 models.login.sync({force:true});

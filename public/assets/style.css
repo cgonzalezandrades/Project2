@@ -210,4 +210,8 @@ h1.text-center {
 	margin-bottom: 70px;
 }
 
+.k-grid-content {
+	overflow: scroll;
+}
+
 
