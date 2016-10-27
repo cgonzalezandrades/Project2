@@ -10,6 +10,7 @@ var app = express();
 
 var override = require('method-override');
 
+
 app.use(override('_method'));
 
 app.set('views',path.join(__dirname,'views'));
@@ -36,6 +37,7 @@ var api_controller = require('./controllers/api_controller');
 var home_controller = require('./controllers/home_controller');
 
 models.beer.sync();
+// models.beer1.sync({force:true});
 models.groups.sync({force:true});
 models.user.sync({force:true});
 models.login.sync({force:true});

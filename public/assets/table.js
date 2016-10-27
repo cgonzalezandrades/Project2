@@ -1,139 +1,160 @@
 /**
  * Created by carlosgonzalez on 10/25/16.
  */
-var models = require('../../models');
+console.log("hey");
+// var models = require('./models');
+// var randow = require();
+
+// models.beer.findAll({
+//
+// })
+// // connect the findAll to this .then
+//     .then(function(beer) {
+//         // grab the user info from our req.
+//         // How is it in our req?
+//         // This info gets saved to req via the users_controller.js file.
+//     console.log(beer);
+//
+//         });
+
 
 var dataSource = {
-    data: [
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 7.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 8.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 8.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "1",
-            "ProductName": "name1",
-            "UnitPrice": 8.5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "2",
-            "ProductName": "name1",
-            "UnitPrice": .5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "2",
-            "ProductName": "name1",
-            "UnitPrice": .5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "2",
-            "ProductName": "name1",
-            "UnitPrice": .5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "2",
-            "ProductName": "name1",
-            "UnitPrice": .5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "2",
-            "ProductName": "name1",
-            "UnitPrice": .5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "2",
-            "ProductName": "name1",
-            "UnitPrice": .5,
-            "Qty": 1
-        },
-        {
-            "ProductID": "2",
-            "ProductName": "name1",
-            "UnitPrice": .5,
-            "Qty": 1
-        }
 
-    ]
+
+    // data: [
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 7.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 8.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 8.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "1",
+    //         "ProductName": "name1",
+    //         "UnitPrice": 8.5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "2",
+    //         "ProductName": "name1",
+    //         "UnitPrice": .5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "2",
+    //         "ProductName": "name1",
+    //         "UnitPrice": .5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "2",
+    //         "ProductName": "name1",
+    //         "UnitPrice": .5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "2",
+    //         "ProductName": "name1",
+    //         "UnitPrice": .5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "2",
+    //         "ProductName": "name1",
+    //         "UnitPrice": .5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "2",
+    //         "ProductName": "name1",
+    //         "UnitPrice": .5,
+    //         "Qty": 1
+    //     },
+    //     {
+    //         "ProductID": "2",
+    //         "ProductName": "name1",
+    //         "UnitPrice": .5,
+    //         "Qty": 1
+    //     }
+    //
+    // ]
 };
 
 
 $(document).ready(function () {
     $("#grid").kendoGrid({
-        dataSource: dataSource,
-        // {
-        //     type: "odata",
-        //     transport: {
-        //         read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
-        //     },
-        //     // pageSize: 50
-        // },
+        dataSource: {
+            type: "odata",
+            transport: {
+                read: {
+                    url: "http://localhost:3000/list",
+                    dataType: "jsonp"
+                },
+
+            },
+            // pageSize: 50
+        },
+
         height: 350,
         // overflow:hidden,
         groupable: false,
@@ -144,8 +165,8 @@ $(document).ready(function () {
         //     buttonCount: 15
         // },
         columns: [{
-            field: "ProductID",
-            title: "",
+            field: "result[0].id",
+            title: "id",
             width: 300
         }, {
             field: "ProductName",
@@ -160,4 +181,7 @@ $(document).ready(function () {
             width: 300
         }]
     });
+
+    console.log(dataSource);
+
 });

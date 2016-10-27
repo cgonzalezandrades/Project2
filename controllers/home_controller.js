@@ -10,4 +10,19 @@ router.get('/', function (req, res) {
 	res.render('index');
 });
 
+router.get('/list',function (req,res) {
+
+	models.beer.findAll({})
+		.then(function (result) {
+
+
+			console.log(result[0].id);
+			res.json(result);
+
+
+
+		})
+
+})
+
 module.exports = router;
