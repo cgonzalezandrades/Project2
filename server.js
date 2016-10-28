@@ -5,6 +5,8 @@ var hB = require('express-handlebars');
 var path = require('path');
 var models = require('./models');
 var user = require('./controllers/user_controller');
+var session = require('express-session');
+var cookieParser = require('cookie-parser');
 
 var app = express();
 
@@ -33,6 +35,9 @@ app.use(bodyParser.json({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({secret: 'app', cookie: { maxAge:60000}, resave: true, saveUninitialized: true}));
+app.use(cookieParser());
+
 var api_controller = require('./controllers/api_controller');
 var home_controller = require('./controllers/home_controller');
 
@@ -40,11 +45,9 @@ models.beer.sync();
 // models.beer1.sync({force:true});
 models.groups.sync({force:true});
 models.user.sync({force:true});
-models.login.sync({force:true});
-models.rankings.sync({force:true});
 
 app.use('/',home_controller);
-app.use('/users', user);
+app.use('/user', user);
 
 
 app.listen(3000, function (){

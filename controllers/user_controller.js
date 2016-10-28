@@ -16,9 +16,8 @@ router.get('/sign-out', function(req,res) {
 		res.redirect('/')
 	})
 });
-
 router.post('/login', function(req, res) {
-	models.User.findOne({
+	models.user.findOne({
 		where: {email: req.body.email}
 	}).then(function(user) {
 
@@ -64,7 +63,8 @@ router.post('/login', function(req, res) {
 
 // register a user
 router.post('/create', function(req,res) {
-	models.User.findAll({
+	console.log("got here")
+	models.user.findAll({
 		where: {email: req.body.email}
 	}).then(function(users) {
 
@@ -83,9 +83,10 @@ router.post('/create', function(req,res) {
 
 					// Using the User model, create a new user,
 					// storing the email they sent and the hash you just made
-					models.User.create({
+					models.user.create({
+						name: req.body.name,
 						email: req.body.email,
-						password_hash: hash
+						password: hash
 					})
 					// In a .then promise connected to that create method,
 					// save the user's information to req.session
