@@ -40,8 +40,6 @@ models.beer.sync();
 // models.beer1.sync({force:true});
 models.groups.sync({force:true});
 models.user.sync({force:true});
-models.login.sync({force:true});
-models.rankings.sync({force:true});
 
 app.use('/',home_controller);
 app.use('/users', user);
