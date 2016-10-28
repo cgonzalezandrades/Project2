@@ -210,8 +210,53 @@ h1.text-center {
 	margin-bottom: 70px;
 }
 
-.k-grid-content {
-	overflow: scroll;
+
+
+/*.table-bordered thead {*/
+	/*width: 100%;*/
+/*}*/
+/*.table-bordered tbody {*/
+	/*height: 230px;*/
+	/*overflow-y: auto;*/
+	/*width: 100%;*/
+/*}*/
+/*.table-bordered thead, .table-bordered tbody, .table-bordered tr, .table-bordered td, .table-bordered th {*/
+	/*display: block;*/
+/*}*/
+/*.table-bordered tbody td, .table-bordered thead > tr> th {*/
+	/*!*float: left;*!*/
+	/*border-bottom-width: 0;*/
+/*}*/
+
+/*tr {*/
+	/*width: 100%;*/
+	/*display: inline-table;*/
+/*}*/
+
+/*table{*/
+	/*height:200px;*/
+/*}*/
+
+/*td{*/
+	/*width: 91px;*/
+/*}*/
+
+td{
+
+}
+
+tbody{
+	overflow-y: scroll;
+	height: 243px;
+	width: 83%;
+	position: absolute;
 }
 
 
+/*td{*/
+	/*width: 100%;*/
+/*}*/
+
+/*.beer-table{*/
+	/*overflow: scroll;*/
+/*}*/

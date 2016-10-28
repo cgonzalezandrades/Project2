@@ -7,7 +7,19 @@ router.get('/', function (req, res) {
 
 	// console.log(models.beer.id);
 
-	res.render('index');
+	models.beer.findAll()
+		.then(function (beers) {
+
+			var beerList = beers;
+
+			console.log(beers);
+
+
+			res.render('index',{beerList:beerList});
+
+
+
+		});
 });
 
 router.get('/list',function (req,res) {
