@@ -1,3 +1,5 @@
+
+
 <div class="brand">BREWARDS</div>
 <div class="slogan">Drink beer | Reward yourself</div>
 <!-- Navigation -->
@@ -69,6 +71,7 @@
     <!-- /.container -->
 </nav>
 <br>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -140,7 +143,7 @@
     </div>
 </div>
 
-<div class="box">
+<div class="beer-box">
     <hr>
     <h2 class="intro-text text-center">
        Available Beers
@@ -151,22 +154,26 @@
 
             <thead>
             <tr>
-                <th>Beer Name</th>
-                <th style="width: 118px">Alcohol Level</th>
-                <th style="width: 609px">Description</th>
+                <th style="width: 108px">Beer Name</th>
+                <th  style="width: 67px">Alcohol Level</th>
+                <th style="width: 68px" >Rewards Points</th>
+                <th  style="">Description</th>
+
 
             </tr>
             </thead>
 
             <tbody>
             {{#each beerList}}
-                <tr>
 
-                    <td style="width: 331px">{{this.name}}</td>
-                    <td style="width: 119px">{{this.alcohol_level}}</td>
+                <tr >
+                    <td >{{this.name}}</td>
+                    <td style="width: 68px">{{this.alcohol_level}}</td>
+                    <td style="width:76px">{{this.points}}</td>
                     <td>{{this.description}}</td>
 
                 </tr>
+
             {{/each}}
             </tbody>
 
@@ -174,6 +181,8 @@
     </div>
     <!--</div>-->
 </div>
+
+<
 
 
 <!-- /.container -->

@@ -130,6 +130,15 @@ li.dropdown {
 	margin-top: 20px;
 }
 
+.beer-box {
+	background-color: white;
+	padding: 20px;
+	width: 1100px;
+	height: 730px;
+	margin-left: 105px;
+	margin-top: 20px;
+}
+
 footer {
 	background-color: white;
 	text-align: center;
@@ -212,51 +221,17 @@ h1.text-center {
 
 
 
-/*.table-bordered thead {*/
-	/*width: 100%;*/
-/*}*/
-/*.table-bordered tbody {*/
-	/*height: 230px;*/
-	/*overflow-y: auto;*/
-	/*width: 100%;*/
-/*}*/
-/*.table-bordered thead, .table-bordered tbody, .table-bordered tr, .table-bordered td, .table-bordered th {*/
-	/*display: block;*/
-/*}*/
-/*.table-bordered tbody td, .table-bordered thead > tr> th {*/
-	/*!*float: left;*!*/
-	/*border-bottom-width: 0;*/
-/*}*/
 
-/*tr {*/
-	/*width: 100%;*/
-	/*display: inline-table;*/
-/*}*/
-
-/*table{*/
-	/*height:200px;*/
-/*}*/
-
-/*td{*/
-	/*width: 91px;*/
-/*}*/
-
-td{
-
-}
 
 tbody{
 	overflow-y: scroll;
-	height: 243px;
+	height: 540px;
 	width: 83%;
 	position: absolute;
 }
 
 
-/*td{*/
-	/*width: 100%;*/
-/*}*/
 
-/*.beer-table{*/
-	/*overflow: scroll;*/
-/*}*/
+
+
+
