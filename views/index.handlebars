@@ -1,5 +1,3 @@
-
-
 <div class="brand">BREWARDS</div>
 <div class="slogan">Drink beer | Reward yourself</div>
 <!-- Navigation -->
@@ -39,16 +37,19 @@
                                     <br>
                                     or
                                     <br>
-                                    <form class="form" role="form" method="post" action="/user/login" accept-charset="UTF-8"
+                                    <form class="form" role="form" method="post" action="/user/login"
+                                          accept-charset="UTF-8"
                                           id="login-nav">
                                         <div class="form-group">
                                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail2" name="email"
+                                            <input type="email" class="form-control" id="exampleInputEmail2"
+                                                   name="email"
                                                    placeholder="Email address" required>
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword2" name="password"
+                                            <input type="password" class="form-control" id="exampleInputPassword2"
+                                                   name="password"
                                                    placeholder="Password" required>
                                         </div>
                                         <div class="form-group">
@@ -107,51 +108,54 @@
             <h2 class="intro-text text-center">Welcome to
                 <strong>Brewards</strong>
             </h2>
-            <p class="aboutBrew">Explore popular beers and broaden your taste buds while earning points to compete for the high score</p>
+            <p class="aboutBrew">Explore popular beers and broaden your taste buds while earning points to compete for
+                the high score</p>
             <p class="aboutBrew">Each week, a new beer will be featured. Drink that beer and earn more!</p>
-            <p class="aboutBrew">Create groups to invite and compete with your friends to see who can become the Beer Master!</p>
+            <p class="aboutBrew">Create groups to invite and compete with your friends to see who can become the Beer
+                Master!</p>
             <p class="aboutBrew">Join Today!</p>
         </div>
     </div>
 </div>
 
 <div class="beer-box">
-    <hr>
-    <h2 class="intro-text text-center">
-       Available Beers
-    </h2>
-    <!--<div class="table-responsive">-->
-    <div class="beer-table">
-        <table class=" table table-bordered table-hover">
 
-            <thead>
-            <tr>
-                <th style="width: 108px">Beer Name</th>
-                <th  style="width: 67px">Alcohol Level</th>
-                <th style="width: 68px" >Rewards Points</th>
-                <th  style="">Description</th>
+    <div class="beer-table" style="text-align:center; width: 1029px">
+        <hr>
+        <h2 class="intro-text text-center">
+            Available Beers
+        </h2>
+        <div class="beer-table">
+            <table class=" table table-bordered table-hover">
 
+                <thead>
+                <tr>
+                    <th style="width: 108px">Beer Name</th>
+                    <th style="width: 67px">Alcohol Level</th>
+                    <th style="width: 68px">Rewards Points</th>
+                    <th style="">Description</th>
 
-            </tr>
-            </thead>
-
-            <tbody>
-            {{#each beerList}}
-
-                <tr >
-                    <td >{{this.name}}</td>
-                    <td style="width: 68px">{{this.alcohol_level}}</td>
-                    <td style="width:76px">{{this.points}}</td>
-                    <td>{{this.description}}</td>
 
                 </tr>
+                </thead>
 
-            {{/each}}
-            </tbody>
+                <tbody>
+                {{#each beerList}}
 
-        </table>
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td style="width: 68px">{{this.alcohol_level}}</td>
+                        <td style="width:76px">{{this.points}}</td>
+                        <td>{{this.description}}</td>
+
+                    </tr>
+
+                {{/each}}
+                </tbody>
+
+            </table>
+        </div>
     </div>
-    <!--</div>-->
 </div>
 
 <!-- /.container -->

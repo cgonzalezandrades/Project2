@@ -48,9 +48,11 @@ app.use('/',home_controller);
 app.use('/user', user);
 
 
-app.listen(3000, function (){
-	console.log("listening...");
-});
+var PORT = process.env.PORT || 3000;
+app.listen(PORT, function () {
+	console.log('IM LISTENING IS PORT ' + PORT);
+
+})
 
 
 
