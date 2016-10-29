@@ -10,7 +10,7 @@ module.exports = function (sequelize, DataTypes) {
         origin_id: DataTypes.INTEGER,
         url_image: DataTypes.STRING,
         points: DataTypes.INTEGER,
-        description: DataTypes.INTEGER
+        description: DataTypes.STRING
 
     }, {
         timestamps: false,

@@ -105,7 +105,10 @@ router.post('/create', function(req,res) {
 						      req.session.user_email = user.email;
 
 						      // redirect to home on login
-						      res.render('userPage')
+						      models.beer.findAll({})
+						            .then(function (beerList) {
+							            res.render('userPage', {beerList: beerList, user:user});
+						            });
 					      })
 				})
 			})
