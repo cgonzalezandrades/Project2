@@ -42,41 +42,43 @@
 
 
 <div class="beer-box">
-    <h2 class="intro-text text-center">
-       Available Beers
-    </h2>
-    <!--<div class="table-responsive">-->
-    <div class="beer-table">
-        <table class=" table table-bordered table-hover">
 
-            <thead>
-            <tr>
-                <th style="width: 108px">Beer Name</th>
-                <th  style="width: 67px">Alcohol Level</th>
-                <th style="width: 68px" >Rewards Points</th>
-                <th  style="">Description</th>
+    <div class="beer-table" style="text-align:center; width: 1029px">
+        <hr>
+        <h2 class="intro-text text-center">
+            Available Beers
+        </h2>
+        <div class="beer-table">
+            <table class=" table table-bordered table-hover">
 
+                <thead>
+                <tr>
+                    <th style="width: 108px">Beer Name</th>
+                    <th style="width: 67px">Alcohol Level</th>
+                    <th style="width: 68px">Rewards Points</th>
+                    <th style="">Description</th>
 
-            </tr>
-            </thead>
-
-            <tbody>
-            {{#each beerList}}
-
-                <tr >
-                    <td >{{this.name}}</td>
-                    <td style="width: 68px">{{this.alcohol_level}}</td>
-                    <td style="width:76px">{{this.points}}</td>
-                    <td>{{this.description}}</td>
 
                 </tr>
+                </thead>
 
-            {{/each}}
-            </tbody>
+                <tbody>
+                {{#each beerList}}
 
-        </table>
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td style="width: 68px">{{this.alcohol_level}}</td>
+                        <td style="width:76px">{{this.points}}</td>
+                        <td>{{this.description}}</td>
+
+                    </tr>
+
+                {{/each}}
+                </tbody>
+
+            </table>
+        </div>
     </div>
-    <!--</div>-->
 </div>
 
 <footer>
