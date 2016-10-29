@@ -44,7 +44,7 @@ var home_controller = require('./controllers/home_controller');
 models.beer.sync();
 // models.beer1.sync({force:true});
 models.groups.sync({force:true});
-models.user.sync({force:true});
+models.user.sync();
 
 app.use('/',home_controller);
 app.use('/user', user);

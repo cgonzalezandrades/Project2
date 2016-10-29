@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
 
 			var beerList = beers;
 
-			console.log(beers);
+			// console.log(beers);
 
 
 			res.render('index',{beerList:beerList});
@@ -36,5 +36,22 @@ router.get('/list',function (req,res) {
 		})
 
 })
+
+router.get('/userPage', function (req, res) {
+
+    models.beer.findAll({})
+
+        .then(function (beerList) {
+            models.user.findAll({})
+                .then(function (user) {
+
+                    res.render('userPage', {beerList: beerList, user:user});
+                })
+
+
+        });
+
+
+});
 
 module.exports = router;

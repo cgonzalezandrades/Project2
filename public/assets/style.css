@@ -121,6 +121,16 @@ li.dropdown {
 	margin-left: 30px;	
 }
 
+.welcome-box{
+
+	background-color: white;
+	padding: 20px;
+	width: 1100px;
+	height: 200px;
+	margin-left: 120px;
+	margin-top: 20px;
+}
+
 .box {
 	background-color: white;
 	padding: 20px;

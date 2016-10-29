@@ -1,10 +1,53 @@
 <div class="row">
-	<div class="col-xs-12 head">Brewards
-		<div class="slogan">Drink beer | Reward yourself</div>
-	</div>
-	<div class="col-xs-2 rank">Rankings column<br>individual and group</div>
-	<div class="col-xs-8 userInfo">User info<br>points, fav beer, current group, etc.</div>
-	<div class="col-xs-2 groups">groups<br>create a group, invite friends</div>
+    <div class="welcome-box">
+        <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center"> Welcome
+                <strong>{{user.name}}</strong>
+            </h2>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<div class="beer-box">
+    <hr>
+    <h2 class="intro-text text-center">
+       Available Beers
+    </h2>
+    <!--<div class="table-responsive">-->
+    <div class="beer-table">
+        <table class=" table table-bordered table-hover">
+
+            <thead>
+            <tr>
+                <th style="width: 108px">Beer Name</th>
+                <th  style="width: 67px">Alcohol Level</th>
+                <th style="width: 68px" >Rewards Points</th>
+                <th  style="">Description</th>
+
+
+            </tr>
+            </thead>
+
+            <tbody>
+            {{#each beerList}}
+
+                <tr >
+                    <td >{{this.name}}</td>
+                    <td style="width: 68px">{{this.alcohol_level}}</td>
+                    <td style="width:76px">{{this.points}}</td>
+                    <td>{{this.description}}</td>
+
+                </tr>
+
+            {{/each}}
+            </tbody>
+
+        </table>
+    </div>
+    <!--</div>-->
 </div>
 
 <footer>

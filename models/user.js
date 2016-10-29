@@ -9,8 +9,16 @@ module.exports = function(sequelize, DataTypes) {
     freezeTableName: true
   },  {
     classMethods: {
-      associate: function(models) {
-        // associations can be defined here
+      classMethods: {
+        associate: function(models) {
+          User.hasMany(models,beer, {
+            onDelete: "CASCADE",
+            hooks: true,
+            foreignKey: {
+              allowNull: false
+            }
+          })
+        }
       }
     }
   });

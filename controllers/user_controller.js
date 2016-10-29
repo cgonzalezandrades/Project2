@@ -17,44 +17,42 @@ router.get('/sign-out', function(req,res) {
 	})
 });
 router.post('/login', function(req, res) {
+	console.log("req.body");
+	console.log(req.body);
 	models.user.findOne({
 		where: {email: req.body.email}
 	}).then(function(user) {
-
+		console.log(user);
+		console.log("^user")
 		if (user == null){
-			res.redirect('/users/sign-in')
+			res.redirect('/')
 		}
 
-		// Solution:
-		// =========
-		// Use bcrypt to compare the user's password input
-		// with the hash stored in the user's row.
-		// If the result is true,
-		bcrypt.compare(req.body.password, user.password_hash, function(err, result) {
+		bcrypt.compare(req.body.password, user.password, function(err, result) {
 			// if the result is true (and thus pass and hash match)
 			if (result == true){
-
-				// save the user's information
-				// to req.session, as the comments below show
-
-				// so what's happening here?
-				// we enter the user's session by setting properties to req.
 
 				// we save the logged in status to the session
 				req.session.logged_in = true;
 				// the username to the session
-				req.session.username = user.username;
+				req.session.name = user.name;
 				// the user id to the session
 				req.session.user_id = user.id;
 				// and the user's email.
 				req.session.user_email = user.email;
 
-				res.redirect('/');
+				models.beer.findAll({})
+					.then(function (beerList) {
+						res.render('userPage', {beerList: beerList, user:user});
+					});
+
+
+				
 			}
 			// if the result is anything but true (password invalid)
 			else{
 				// redirect user to sign in
-				res.redirect('/users')
+				res.redirect('/')
 			}
 		})
 	})
@@ -78,7 +76,7 @@ router.post('/create', function(req,res) {
 
 			// Using bcrypt, generate a 16-round salt,
 			// then use that salt to hash the user's password.
-			bcrypt.genSalt(16, function(err, salt) {
+			bcrypt.genSalt(12, function(err, salt) {
 				bcrypt.hash(req.body.password, salt, function(err, hash) {
 
 					// Using the User model, create a new user,
@@ -107,7 +105,7 @@ router.post('/create', function(req,res) {
 						      req.session.user_email = user.email;
 
 						      // redirect to home on login
-						      res.redirect('/')
+						      res.render('userPage')
 					      })
 				})
 			})
