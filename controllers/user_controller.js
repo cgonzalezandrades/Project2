@@ -41,7 +41,9 @@ router.post('/login', function(req, res) {
 				// and the user's email.
 				req.session.user_email = user.email;
 
-				models.beer.findAll({})
+				models.beer.findAll({
+					order:[['points', 'DESC']]
+				})
 					.then(function (beerList) {
 						res.render('userPage', {beerList: beerList, user:user});
 					});
@@ -104,8 +106,12 @@ router.post('/create', function(req,res) {
 						      // and the user's email.
 						      req.session.user_email = user.email;
 
-						      // redirect to home on login
-						      res.render('userPage')
+						      models.beer.findAll({
+						      	order:[['points', 'DESC']]
+						      })
+								.then(function (beerList) {
+									res.render('userPage', {beerList: beerList, user:user});
+								});
 					      })
 				})
 			})
