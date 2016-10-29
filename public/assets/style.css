@@ -139,6 +139,7 @@ li.dropdown {
 .userInfo {
 	text-align: left;
 	background-color: none !important;
+	width: 800px;
 }
 
 .userPoints {
@@ -151,6 +152,17 @@ li.dropdown {
 
 .userBeers {
 	text-align: left;
+	list-style-type: none;
+}
+
+.rankingsF {
+	text-align: right;
+	margin-left: 90px;
+}
+
+.noBullets {
+	text-align: left;
+	margin-left: 90px;
 	list-style-type: none;
 }
 
