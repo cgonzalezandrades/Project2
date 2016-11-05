@@ -1,6 +1,6 @@
 ## Project 2
 
-### Group Members and Skills
+### Project Members
 1. Patrick Galloway
  * **Project manager** and **Back End developer**	
 2. Lea Steele
